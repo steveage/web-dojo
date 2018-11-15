@@ -14,10 +14,9 @@ namespace HighbushFunctionApp
     public static class Function1
     {
         [FunctionName("Function1")]
-        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req, [Queue("highbush-automation-queue", Connection = "AzureWebJobsStorage1")] IAsyncCollector<IotEvent> queueCollector, ILogger log)
+        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req, [Queue("highbush-automation-queue", Connection = "AzureWebJobsStorage")] IAsyncCollector<IotEvent> queueCollector, ILogger log)
         {
             IActionResult result;
-            log.LogInformation("C# HTTP trigger function processed a request.");
 
             //string name = req.Query["name"];
 
@@ -32,7 +31,7 @@ namespace HighbushFunctionApp
             }
             else
             {
-                string message = $"IOT event was triggered.";
+                string message = "IOT event was triggered.";
                 await queueCollector.AddAsync(iotEvent);
                 log.LogInformation(message);
                 result = new OkObjectResult(message);

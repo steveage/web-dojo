@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighbushFunctionApp", "HighbushFunctionApp\HighbushFunctionApp.csproj", "{FD42F02B-0927-4BD9-9A2F-449853CA83A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighbushAutomation.Data", "HighbushAutomation.Data\HighbushAutomation.Data.csproj", "{FE895815-6B8B-4C88-B701-777160181845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighbushAutomation.Data", "HighbushAutomation.Data\HighbushAutomation.Data.csproj", "{FE895815-6B8B-4C88-B701-777160181845}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highbush.Processor", "Highbush.Processor\Highbush.Processor.csproj", "{DE6A2E6A-CD5D-4FCD-9915-3F3E27BD6054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FE895815-6B8B-4C88-B701-777160181845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE895815-6B8B-4C88-B701-777160181845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE895815-6B8B-4C88-B701-777160181845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6A2E6A-CD5D-4FCD-9915-3F3E27BD6054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6A2E6A-CD5D-4FCD-9915-3F3E27BD6054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6A2E6A-CD5D-4FCD-9915-3F3E27BD6054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6A2E6A-CD5D-4FCD-9915-3F3E27BD6054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
